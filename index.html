@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bouncing Ball With CSS</title>
+    <style>
+        @keyframes bounce {
+            0% {
+                left: 0%;
+                top: 0px;
+                color: indigo;
+                transform: scale(1);
+            }
+
+            10% {
+
+                left: 9%;
+                top: 416px;
+                color: blue;
+                transform: scale(.75);
+            }
+
+            20% {
+
+                left: 18%;
+                top: 0px;
+                color: skyblue;
+                transform: scale(1);
+            }
+
+            30% {
+
+                left: 27%;
+                top: 416px;
+                color: green;
+                transform: scale(.75);
+            }
+
+            40% {
+
+                left: 36%;
+                top: 0px;
+                color: yellow;
+                transform: scale(1);
+            }
+
+
+            50% {
+
+                left: 45%;
+                top: 416px;
+                color: orange;
+                transform: scale(.75);
+            }
+
+            60% {
+
+                left:54%;
+                top: 0px;
+                color:orangered;
+                transform: scale(1);
+            }
+
+            70% {
+                left: 63%;
+                top: 416px;
+                color:brown ;
+                transform: scale(.75);
+            }
+
+            80% {
+                left: 72%;
+                top: 0px;
+                color: maroon;
+                transform: scale(1);
+            }
+
+            90% {
+                left: 81%;
+                top: 416px;
+                color: red;
+                transform: scale(.75);
+            }
+
+            100% {
+
+                left: 90%;
+                top: 0px;
+                background-color: red;
+                transform: scale(1);
+            }
+        }
+
+        .container {
+            margin: 10%;
+            height: 500px;
+            width: 80%;
+            background-color:linen;
+            border: 3px solid black;
+
+        }
+
+        .ball {
+            position: relative;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background-color: indigo;
+            animation: bounce 5s ease-in-out 1s infinite alternate;
+            animation-play-state: running;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="ball">
+        </div>
+    </div>
+</body>
+
+</html>
